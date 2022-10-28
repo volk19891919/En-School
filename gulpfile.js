@@ -143,7 +143,7 @@ function deploy() {
 		.pipe(rsync({
 			root: 'dist/',
 			hostname: 'volk191z@volk191z.beget.tech',
-			destination: 'ka-business.ru/public_html/development/ttttst',
+			destination: 'ka-business.ru/public_html/development/english-school',
 			// clean: true, // Mirror copy with file deletion
 			include: [/* '*.htaccess' */], // Included files to deploy,
 			exclude: ['**/Thumbs.db', '**/*.DS_Store'],
