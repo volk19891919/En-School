@@ -1,0 +1,275 @@
+//Grid content
+.container
+	width: 100%
+	max-width: $xxl
+	margin-left: auto
+	margin-right: auto
+	padding-left: $left
+	padding-right: $right
+
+.row
+	margin-left: -$left
+	margin-right: -$right
+
+.flex
+	display: flex
+	&_fw
+		flex-wrap: wrap
+	&_aic
+		align-items: center
+	&_jcc
+		justify-content: center
+	&_jcsb
+		justify-content: space-between
+
+.hidden
+	display: none
+
+// < 768 = sm
+// >= 768 < 992 = md
+// >= 993 < 1200 = lg
+// > 1201 = xl
+
+.grid
+	gap: $gap
+	display: grid
+	>*
+		min-width: 0
+	&.col
+		&-sm-12
+			grid-template-columns: repeat(12, 1fr)
+		&-sm-11
+			grid-template-columns: repeat(11, 1fr)
+		&-sm-10
+			grid-template-columns: repeat(10, 1fr)
+		&-sm-9
+			grid-template-columns: repeat(9, 1fr)
+		&-sm-8
+			grid-template-columns: repeat(8, 1fr)
+		&-sm-7
+			grid-template-columns: repeat(7, 1fr)
+		&-sm-6
+			grid-template-columns: repeat(6, 1fr)
+		&-sm-5
+			grid-template-columns: repeat(5, 1fr)
+		&-sm-4
+			grid-template-columns: repeat(4, 1fr)
+		&-sm-3
+			grid-template-columns: repeat(3, 1fr)
+		&-sm-2
+			grid-template-columns: repeat(2, 1fr)
+		&-sm-1
+			grid-template-columns: repeat(1, 1fr)
+
+.span
+	&-sm
+		&-12
+			grid-column: span 12
+		&-11
+			grid-column: span 11
+		&-10
+			grid-column: span 10
+		&-9
+			grid-column: span 9
+		&-8
+			grid-column: span 8
+		&-7
+			grid-column: span 7
+		&-6
+			grid-column: span 6
+		&-5
+			grid-column: span 5
+		&-4
+			grid-column: span 4
+		&-3
+			grid-column: span 3
+		&-2
+			grid-column: span 2
+		&-1
+			grid-column: span 1
+
+@media only screen and (min-width: 768px)
+	.grid
+		&.col
+			&-md-12
+				grid-template-columns: repeat(12, 1fr)
+			&-md-11
+				grid-template-columns: repeat(11, 1fr)
+			&-md-10
+				grid-template-columns: repeat(10, 1fr)
+			&-md-9
+				grid-template-columns: repeat(9, 1fr)
+			&-md-8
+				grid-template-columns: repeat(8, 1fr)
+			&-md-7
+				grid-template-columns: repeat(7, 1fr)
+			&-md-6
+				grid-template-columns: repeat(6, 1fr)
+			&-md-5
+				grid-template-columns: repeat(5, 1fr)
+			&-md-4
+				grid-template-columns: repeat(4, 1fr)
+			&-md-3
+				grid-template-columns: repeat(3, 1fr)
+			&-md-2
+				grid-template-columns: repeat(2, 1fr)
+			&-md-1
+				grid-template-columns: repeat(1, 1fr)
+
+	.span
+		&-md
+			&-12
+				grid-column: span 12
+			&-11
+				grid-column: span 11
+			&-10
+				grid-column: span 10
+			&-9
+				grid-column: span 9
+			&-8
+				grid-column: span 8
+			&-7
+				grid-column: span 7
+			&-6
+				grid-column: span 6
+			&-5
+				grid-column: span 5
+			&-4
+				grid-column: span 4
+			&-3
+				grid-column: span 3
+			&-2
+				grid-column: span 2
+			&-1
+				grid-column: span 1
+
+@media only screen and (min-width: 993px)
+	.grid
+		&.col
+			&-lg-12
+				grid-template-columns: repeat(12, 1fr)
+			&-lg-11
+				grid-template-columns: repeat(11, 1fr)
+			&-lg-10
+				grid-template-columns: repeat(10, 1fr)
+			&-lg-9
+				grid-template-columns: repeat(9, 1fr)
+			&-lg-8
+				grid-template-columns: repeat(8, 1fr)
+			&-lg-7
+				grid-template-columns: repeat(7, 1fr)
+			&-lg-6
+				grid-template-columns: repeat(6, 1fr)
+			&-lg-5
+				grid-template-columns: repeat(5, 1fr)
+			&-lg-4
+				grid-template-columns: repeat(4, 1fr)
+			&-lg-3
+				grid-template-columns: repeat(3, 1fr)
+			&-lg-2
+				grid-template-columns: repeat(2, 1fr)
+			&-lg-1
+				grid-template-columns: repeat(1, 1fr)
+
+	.span
+		&-lg
+			&-12
+				grid-column: span 12
+			&-11
+				grid-column: span 11
+			&-10
+				grid-column: span 10
+			&-9
+				grid-column: span 9
+			&-8
+				grid-column: span 8
+			&-7
+				grid-column: span 7
+			&-6
+				grid-column: span 6
+			&-5
+				grid-column: span 5
+			&-4
+				grid-column: span 4
+			&-3
+				grid-column: span 3
+			&-2
+				grid-column: span 2
+			&-1
+				grid-column: span 1
+
+@media only screen and (min-width: 1201px)
+	.grid
+		&.col-12
+			grid-template-columns: repeat(12, 1fr)
+		&.col-11
+			grid-template-columns: repeat(11, 1fr)
+		&.col-10
+			grid-template-columns: repeat(10, 1fr)
+		&.col-9
+			grid-template-columns: repeat(9, 1fr)
+		&.col-8
+			grid-template-columns: repeat(8, 1fr)
+		&.col-7
+			grid-template-columns: repeat(7, 1fr)
+		&.col-6
+			grid-template-columns: repeat(6, 1fr)
+		&.col-5
+			grid-template-columns: repeat(5, 1fr)
+		&.col-4
+			grid-template-columns: repeat(4, 1fr)
+		&.col-3
+			grid-template-columns: repeat(3, 1fr)
+		&.col-2
+			grid-template-columns: repeat(2, 1fr)
+		&.col-1
+			grid-template-columns: repeat(1, 1fr)
+
+	.span
+		&-12
+			grid-column: span 12
+		&-11
+			grid-column: span 11
+		&-10
+			grid-column: span 10
+		&-9
+			grid-column: span 9
+		&-8
+			grid-column: span 8
+		&-7
+			grid-column: span 7
+		&-6
+			grid-column: span 6
+		&-5
+			grid-column: span 5
+		&-4
+			grid-column: span 4
+		&-3
+			grid-column: span 3
+		&-2
+			grid-column: span 2
+		&-1
+			grid-column: span 1
+
+@media only screen and (max-width: 767px)
+	.sm-hidden
+		display: none !important
+@media only screen and (max-width: 992px)
+	.md-hidden
+		display: none !important
+@media only screen and (max-width: 1200px)
+	.lg-hidden
+		display: none !important
+
+
+@media only screen and (min-width: 768px)
+	.sm-visible
+		display: none !important
+
+@media only screen and (min-width: 993px)
+	.md-visible
+		display: none !important
+
+@media only screen and (min-width: 1201px)
+	.lg-visible
+		display: none !important
