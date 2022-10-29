@@ -14,6 +14,18 @@
 	background: url(../images/dist/bg-1.jpg) no-repeat bottom
 	background-size: cover
 	padding: 23rem 0 16rem
+	position: relative
+	z-index: 3
+	&::before
+		content: ''
+		display: block
+		width: 33.4rem
+		height: 48.9rem
+		background: url(../images/dist/flag1.png) no-repeat center
+		background-size: contain
+		position: absolute
+		left: 0
+		bottom: -25.6rem
 	p
 		font-size: 2.2rem
 		line-height: 1.36
@@ -22,3 +34,374 @@
 
 .block-2
 	padding: 9rem 0 7rem
+	background: url(../images/dist/bg-2.jpg) no-repeat bottom
+	background-size: 100%
+	position: relative
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		top: 5rem
+		left: 0
+		width: 100%
+		padding-bottom: 55.25%
+		background: url(../images/dist/dec-1.png) no-repeat center
+		background-size: contain
+		z-index: 2
+	.z-i-5
+		position: relative
+		z-index: 5
+	&__wrapper
+		position: relative
+		padding-top: 24.5rem
+		z-index: 3
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-end
+		&::before
+			content: 'Поgароk'
+			font-family: Axiforma
+			font-weight: 800
+			font-size: 200px
+			line-height: 119.1%
+			color: #F3F6F9
+			position: absolute
+			left: -9.2rem
+			top: 7rem
+	&__lefft
+		width: 380px / 1200px * 100%
+		padding-bottom: 9.2rem
+		margin-right: auto
+		p
+			font-size: 2.2rem
+			line-height: 1.36
+			margin-bottom: 2.5rem
+		ol
+			list-style-type: none
+			counter-reset: num
+			li
+				position: relative
+				font-size: 1.8rem
+				line-height: 1.24
+				padding: 0.5rem 0 0.5rem 7.2rem
+				&:not(:last-child)
+					margin-bottom: 2.4rem
+				&::before
+					content: '0' counter(num)
+					counter-increment: num
+					display: flex
+					align-items: center
+					justify-content: center
+					text-align: center
+					border-radius: 50%
+					overflow: hidden
+					line-height: 1
+					width: 5.4rem
+					height: 5.4rem
+					color: #fff
+					background: $accent
+					position: absolute
+					left: 0
+					font-family: Axiforma
+					font-weight: 800
+					font-size: 2.4rem
+					line-height: 119.1%
+					top: 50%
+					transform: translateY(-50%)
+					padding-top: 0.5rem
+
+.block-3
+	padding: 14rem 0 0
+	background: url(../images/dist/bg-3.png) no-repeat top
+	background-size: 100%
+	position: relative
+	z-index: 1
+	&::before, &::after
+		content: ''
+		display: block
+		position: absolute
+	&::before
+		width: 23.9rem
+		height: 32.4rem
+		background: url(../images/dist/dec-2.svg) no-repeat center
+		background-size: contain
+		z-index: 1
+		left: 0
+		top: -17.3rem
+	&::after
+		width: 30.6rem
+		height: 46.4rem
+		background: url(../images/dist/flag2.png) no-repeat center
+		background-size: contain
+		right: 0
+		bottom: -11rem
+	p
+		font-size: 1.8rem
+		line-height: 1.67
+	.grid
+		position: relative
+		z-index: 2
+	&__img
+		position: relative
+		+box-sh
+		border-radius: 2rem
+		border: 2rem solid #fff
+		div
+			position: relative
+			overflow: hidden
+			padding-bottom: 69.8%
+			img
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
+				object-fit: cover
+		&::before
+			content: ''
+			z-index: 2
+			position: absolute
+			width: 17.1rem
+			height: 14.8rem
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='171' height='148' viewBox='0 0 171 148' fill='none'%3E%3Cpath d='M26.704 132.59L85.5938 30.5898L144.483 132.59L26.704 132.59Z' stroke='%23E26055' stroke-width='30'/%3E%3C/svg%3E")
+			background-size: contain
+			transform: rotate(135deg)
+			bottom: -13rem
+			right: 6rem
+	&__wrapper
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		padding-top: 17rem
+		padding-bottom: 7rem
+		position: relative
+		&::after
+			content: ''
+			display: block
+			width: 37.1rem
+			height: 77.6rem
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(calc(-50% - -4.5rem))
+			background: url(../images/dist/man1.png) no-repeat center
+			background-size: contain
+	&__left
+		width: 483px / 1200px * 100%
+		margin-right: auto
+		padding-top: 3.5rem
+	&__right
+		width: 330px / 1200px * 100%
+		display: grid
+		gap: 3.3rem
+	.btn-groop-aroow
+		margin-top: 3.8rem
+
+.block-4
+	background: #F3F6F9
+	padding: 10.7rem 0
+	position: relative
+	z-index: 0
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		bottom: 0
+		right: 0
+		width: 371px / 1910px * 100%
+		padding-bottom: 11.68%
+		background: url(../images/dist/dec-3.svg) no-repeat center
+		background-size: contain
+
+.shema
+	display: flex
+	flex-wrap: wrap
+	gap: 3.4rem 3rem
+	counter-reset: shema
+	position: relative
+	z-index: 2
+	&::after
+		content: ''
+		display: block
+		width: 13.8rem
+		height: 13.8rem
+		background: url(../images/dist/c1.svg) no-repeat center
+		background-size: contain
+		position: absolute
+		z-index: 1
+		top: 0
+		left: 100%
+		transform: translate(-55%, -50%)
+	>*
+		width: calc( 33.333% - 2rem )
+		display: flex
+		z-index: 2
+	li
+		&:nth-child(2n + 1)
+			>*
+				&::before
+					color: $red
+		&:nth-child(2)
+			>*
+				&::after
+					top: 50%
+					transform: translateY(-50%) rotate(45deg)
+					left: calc( 100% - 4rem )
+		&:nth-child(3)
+			>*
+				&::after
+					top: calc( 100% - 4rem )
+					left: 50%
+					transform: translateX(-50%) rotate(45deg)
+		&:nth-child(4), &:nth-child(5)
+			>*
+				&::after
+					top: 50%
+					transform: translateY(-50%) rotate(45deg)
+					right: calc( 100% - 4rem )
+	&__title
+		align-self: center
+	&-item
+		background: #FFFFFF
+		border-radius: 2rem
+		+box-sh
+		padding: 2.3rem 2.8rem 2.3rem 9.5rem
+		width: 100%
+		position: relative
+		z-index: 2
+		display: flex
+		align-items: center
+		min-height: 19rem
+		transition: 0.5s
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			width: 4.4rem
+			height: 4.4rem
+			border-radius: 0.3rem
+			background: #fff
+			z-index: -1
+			transition: 0.5s
+		&:hover
+			background: $accent
+			color: #fff
+			&::before
+				color: #fff !important
+			&::after
+				background: $accent
+		&::before
+			counter-increment: shema
+			content: '0' counter(shema) '.'
+			position: absolute
+			left: 2rem
+			top: 50%
+			line-height: 1
+			transform: translateY(-50%)
+			font-weight: 800
+			font-size: 4rem
+			font-family: Axiforma
+			transition: 0.5s
+			color: $accent
+
+@media only screen and (min-width: 768px)
+	.shema
+		>*
+			&:nth-child(4)
+				order: 2
+			&:nth-child(5)
+				order: 1
+
+.block-5
+	padding: 11.7rem 0 9rem
+	position: relative
+	z-index: 1
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		z-index: 0
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='171' height='148' viewBox='0 0 171 148' fill='none'%3E%3Cpath d='M26.704 132.59L85.5938 30.5898L144.483 132.59L26.704 132.59Z' stroke='%23E26055' stroke-width='30'/%3E%3C/svg%3E")
+		background-size: contain
+		height: 14.8rem
+		transform: translate(0, -60%) rotate(5deg)
+		width: 17.1rem
+		top: 0
+		left: calc( 50% - 80rem )
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		z-index: 0
+		width: 1451px / 1910px * 100%
+		padding-bottom: 25.811%
+		top: 0
+		left: 90px / 1910px * 100%
+		background: url(../images/dist/dec-4.svg) no-repeat center
+		background-size: contain
+	.container
+		position: relative
+		z-index: 2
+		&::before
+			content: ''
+			top: 0
+			left: 0
+			transform: translateX(-100%)
+			background: url(../images/dist/dec-5.png) no-repeat center
+			background-size: contain
+			width: 67.5rem
+			height: 75.1rem
+			position: absolute
+			z-index: -1
+
+@media only screen and (max-width: 1600px)
+	.block-5
+		.container
+			&::before
+				transform: translateX(-70%)
+
+.block-6
+	position: relative
+	z-index: 2
+	padding: 7.6rem 0 12.2rem
+	background: #F3F6F9
+	.container
+		position: relative
+		z-index: 1
+		&::before, &::after
+			content: ''
+			display: block
+			position: absolute
+		&::before
+			width: 16.5rem
+			height: 16.5rem
+			background: url(../images/dist/dec-8.svg) no-repeat center
+			background-size: contain
+			right: 25.3rem
+			top: -13rem
+		&::after
+			width: 29.6rem
+			height: 42.1rem
+			background: url(../images/dist/dec-9.png) no-repeat center
+			background-size: contain
+			left: calc( 100% + 6.4rem )
+			top: calc( 100% + 3rem )
+	&::before, &::after
+		content: ''
+		display: block
+		position: absolute
+		z-index: 0
+	&::before
+		width: 25.5rem
+		height: 42.4rem
+		background: url(../images/dist/dec-6.svg) no-repeat center
+		background-size: contain
+		right: 0
+		top: -30.3rem
+	&::after
+		width: 100%
+		padding-bottom: 37.5%
+		left: 0
+		bottom: -17.4rem
+		background: url(../images/dist/dec-7.svg) no-repeat center
+		background-size: contain

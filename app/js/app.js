@@ -1,21 +1,62 @@
-// import $ from 'jquery'; window.jQuery = $; window.$ = $ // import module example (npm i -D jquery)
-//import slick from 'slick-carousel'
-//import owl from 'owl.carousel'
-//import magnificpopup from 'magnific-popup'
-// require('./other_script.js') // Require Other Script(s) from app/js folder Example
-//import { Swiper, Parallax, Mousewheel, Controller, Pagination, Scrollbar, Navigation } from 'swiper'
-//Swiper.use([ Parallax, Mousewheel, Controller, Pagination, Scrollbar, Navigation ])
-
-//import { gsap, Power2 } from 'gsap'
-//import MicroModal from 'micromodal'
-//import { Fancybox } from "@fancyapps/ui/src/Fancybox/Fancybox.js"
-
 document.addEventListener('DOMContentLoaded', () => {
 
-	// Custom JS
+	const calcNav = document.querySelector('.calc-nav')
 
-	// let lazyLoadInstance = new LazyLoad({
-	// 	// Your custom settings go here
-	// });
+	calcNav.addEventListener('click', (e) => {
+		const btns = document.querySelectorAll('.calc-btn')
+
+		const target = e.target
+		const targetLoc = target.dataset.loc
+		const targetNative = target.dataset.native
+
+		const locCalc = document.querySelector('.loc-calc')
+		const nativeCalc = document.querySelector('.native-calc')
+
+
+		Array.from(btns).forEach(btn => {
+			btn.classList.remove('active')
+		})
+		target.classList.add('active')
+
+		locCalc.innerHTML = targetLoc
+		nativeCalc.innerHTML = targetNative
+	})
+
+	const car4 = new Swiper('.car-4', {
+		loop: false,
+		navigation: {
+			nextEl: '.car-4-next',
+			prevEl: '.car-4-prev',
+		},
+		spaceBetween: 0,
+		breakpoints: {
+			320: {
+				slidesPerView: 1.2,
+			},
+			600: {
+				slidesPerView: 2.2,
+			},
+			993: {
+				slidesPerView: 4,
+			}
+		}
+	});
+
+	const car2 = new Swiper('.car-2', {
+		loop: false,
+		navigation: {
+			nextEl: '.car-2-next',
+			prevEl: '.car-2-prev',
+		},
+		spaceBetween: 0,
+		breakpoints: {
+			320: {
+				slidesPerView: 1.2,
+			},
+			993: {
+				slidesPerView: 2,
+			}
+		}
+	});
 
 })
