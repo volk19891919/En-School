@@ -4,11 +4,54 @@
 	.container
 		max-width: $xl
 
+	.block-6 .container:after
+		left: auto
+		right: -11.5rem
+		width: calc(29.6rem * 0.7)
+		height: calc(42.1rem * 0.7)
+
 @media only screen and (max-width: 1200px)
 	html
 		font-size: calc(100vw / 992 * 10)
 	.container
 		max-width: $lg
+
+	.bodi-modal-active
+		padding-right: 0
+
+	.block-6 .container:after, .block-1:before, .block-3:after
+		display: none
+
+	.header
+		padding-top: 1rem
+
+	.block-2, .block-7
+		background-size: 150%
+
+	.block-2:before
+		background: url(../images/dist/dec-1.png) no-repeat 73%
+		background-size: 150%
+
+	.block-2__wrapper:before, .block-7__wrapper:before
+		left: 0
+		font-size: 15rem
+
+	.block-3__wrapper:after
+		width: calc( 37.1rem * 0.75 )
+		height: calc( 77.6rem * 0.75 )
+
+	.h2, h2
+		font-size: 3.6rem
+
+	.calc__head
+		.flex
+			flex-direction: column
+			align-items: flex-start
+			gap: 1rem
+
+	.card-img-text .h3
+		font-size: 1.8rem
+		height: auto
 
 @media only screen and (max-width: 992px)
 	html
@@ -16,15 +59,354 @@
 	.container
 		max-width: $md
 
+	.btn-primary
+		padding: calc(2.3rem * 0.75) calc(2.7rem * 0.75) calc(1.8rem * 0.75)
+
+	.btn-icon_50:after
+		margin-left: 2rem
+
+	.h1, h1
+		font-size: 4rem
+
+	.h2, h2
+		font-size: 2.8rem
+
+	.block-1
+		padding-top: 10rem
+		padding-bottom: 7rem
+
+	.card-img-text
+		padding: 2rem 1.5rem
+
+	.block-2__wrapper
+		padding-top: 20rem
+
+	.block-2__lefft, .block-7__lefft
+		width: 36%
+
+	.form-wrapper
+		width: 40rem
+		padding: 3.5rem 3rem
+
+	.block-3__img
+		border-width: 0.5rem
+		border-radius: 1.5rem
+		div
+			border-radius: 1rem
+
+	.block-3__wrapper
+		padding-top: 7rem
+
+	.block-3__wrapper:after
+		width: calc( 37.1rem * 0.5 )
+		height: calc( 77.6rem * 0.5 )
+		transform: translateX(calc(-50% + 1rem))
+
+	.block-3 p
+		font-size: 1.6rem
+
+	.icon-text .h3
+		font-size: 1.8rem
+
+	.block-3__right
+		width: 33%
+
+	.shema
+		display: grid
+		>*
+			width: 100%
+
+	.shema li
+		>::after
+			left: 50% !important
+			top: calc(100% - 4rem) !important
+			transform: translateX(-50%) rotate(45deg) !important
+		&:nth-child(6)
+			>::after
+				display: none !important
+
+	.shema>:nth-child(5), .shema>:nth-child(4)
+		order: initial
+
+	.shema-item
+		min-height: 5rem
+
+	.shema__title
+		h2 br
+			display: none
+
+	.pt-180
+		padding-top: 7rem
+
+	.block-6 .container:before
+		display: none
+
+	.block-7__lefft
+		font-size: 1.6rem
+
+	.footer
+		font-size: 1.4rem
+
+	.footer__logo
+		margin-right: 2rem
+		width: 16rem
+
+	.btn-icon_26:after
+		display: none
+
+	.btn-primary.btn-icon_26
+		padding: 1.725rem 2.025rem 1.35rem
+
 @media only screen and (max-width: 767px)
 	html
 		font-size: calc(100vw / 576 * 10)
+
+	.grid
+		gap: 2rem
+
 	.container
 		max-width: $sm
+
+	.block-2__wrapper:before, .block-7__wrapper:before
+		font-size: 10rem
+
+	.header__logo
+		width: 17rem
+
+	.block-1 p
+		font-size: 1.8rem
+		margin-bottom: 3rem
+
+	.btn-primary
+		&::after
+			display: none
+
+	.block-1
+		padding-bottom: 10rem
+		.h1
+			max-width: 70%
+			font-size: 3.6rem
+		p
+			max-width: 60%
+
+	.block-2
+		padding-top: 7rem
+		background: transparent
+
+	.card-img-text__img
+		margin-bottom: 2rem
+		min-height: 10rem
+		height: 10rem
+
+	.card-img-text p
+		font-size: 1.4rem
+
+	.block-2__wrapper
+		padding-top: 15rem
+
+	.block-2__wrapper:before, .block-7__wrapper:before
+		top: 2rem
+
+	.block-2__wrapper, .block-7__wrapper
+		display: grid
+		gap: 4rem
+		.form-wrapper
+			width: 100%
+			max-width: 100%
+
+	.block-2__lefft, .block-7__lefft
+		width: 100%
+		.h2 br
+			display: none
+
+	.block-2__lefft p
+		font-size: 1.8rem
+
+	.block-2__lefft
+		padding-bottom: 0
+
+	.form-wrapper__title
+		font-size: 2rem
+	.form-wrapper__sub-text
+		margin-bottom: 1.5rem
+	.form .label input
+		height: 4.3rem
+		margin-bottom: 2rem
+
+	.block-3
+		padding-top: 0
+		background: transparent
+		.h2 br
+			display: none
+	.block-3:before, .block-3__img:before
+		display: none
+
+	.block-3__wrapper
+		padding-top: 4rem
+		display: grid
+		gap: 4rem
+	.block-3__left
+		width: 100%
+		padding-top: 0
+
+	.block-3__right
+		width: 70%
+		gap: 2rem
+	
+	.block-3__wrapper:after
+		left: auto
+		right: 0
+		width: 28%
+		height: auto
+		padding-bottom: 57%
+		transform: translate(0, 0)
+
+	.icon-text__icon
+		margin-bottom: 1rem
+		&::before, img
+			width: 5rem
+			height: 5rem
+
+	.block-3 p br
+		display: none
+	.block-4, .block-5, .block-6, .block-7
+		padding: 7rem 0
+
+	.block-4:before, .block-5:after, .block-5 .container:before, .block-6:before, .block-6:after
+		display: none
+
+	.calc__head p
+		font-size: 1.8rem
+		margin-bottom: 2rem
+
+	.pt-180
+		padding-top: 4rem
+
+	.slider-header p
+		font-size: 1.6rem
+	.slider-header .flex
+		display: none
+
+	.slider-header
+		margin-bottom: 3rem
+
+	.block-7__lefft
+		padding-bottom: 0
+
+	.block-7
+		background: transparent
+
+	.footer
+		.flex
+			gap: 1.5rem
+			flex-direction: column
+			align-items: center
+			justify-content: center
+		.cop
+			margin: 0
+
+	.footer__logo
+		margin: 0
+
+	.calc-btn
+		font-size: 1.6rem
+		width: 6rem
+		height: auto
+		padding: 0.5rem 0.3rem 0.2rem
+
+	.card-img-text__img
+		img
+			height: 100%
+
+	.pt-10
+		padding-top: 0
+
+	.slider-wrapper .btn-groop-aroow
+		margin-top: 3rem
+
+	.car-2, .car-6, .car-4
+		margin-left: -1rem
+		margin-right: -1rem
+		.swiper-slide
+			padding-left: 1rem
+			padding-right: 1rem
 
 @media only screen and (max-width: 576px)
 	html
 		font-size: calc(100vw / 375 * 10)
+
+	.block-2__wrapper:before, .block-7__wrapper:before
+		font-size: 7rem
+
+	.btn-groop-aroow:after
+		display: none
+
+	.modal__wrapper
+		margin: 0 1rem
+
+	.btn-primary
+		min-width: 13rem
+
+	.block-1 .h1
+		font-size: 3.4rem
+		max-width: 78%
+
+	.block-1 p
+		max-width: 61%
+		font-size: 1.6rem
+
+	.block-2:before
+		display: none
+
+	.block-3
+		overflow: hidden
+
+	.block-3__wrapper:after
+		width: 63%
+		padding-bottom: 130%
+		right: -7rem
+
+	.icon-text
+		background: #fff
+		z-index: 5
+		position: relative
+		+box-sh
+		border-radius: 1.5rem
+		padding: 1.5rem
+
+	.block-3__right
+		width: 100%
+		.icon-text
+			width: 70%
+			&:first-child
+				width: 100%
+
+	.calc-item__title
+		font-size: 1.8rem
+		line-height: 1.2
+
+	.calc-item__result
+		font-size: 3rem
+
+	.calc-item
+		justify-content: center
+		align-items: center
+		display: flex
+		flex-direction: column
+
+	.teacher__ava
+		width: 15rem
+		height: 15rem
+		margin-bottom: -5.5rem
+	.car-4 .swiper-slide
+		padding-top: 7.5rem
+
+	.feedback
+		font-size: 1.4rem
+		padding: 1.5rem 1rem
+
+	.feedback__name
+		font-size: 1.6rem
 
 @media only screen and (max-width: 375px)
 	//

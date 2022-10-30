@@ -33,10 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
 			320: {
 				slidesPerView: 1.2,
 			},
-			600: {
+			768: {
 				slidesPerView: 2.2,
 			},
 			993: {
+				slidesPerView: 3,
+			},
+			1200: {
 				slidesPerView: 4,
 			}
 		}
@@ -58,5 +61,44 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		}
 	});
+
+	const car6 = new Swiper('.car-6', {
+		loop: false,
+		navigation: {
+			nextEl: '.car-6-next',
+			prevEl: '.car-6-prev',
+		},
+		spaceBetween: 0,
+		breakpoints: {
+			320: {
+				slidesPerView: 2.4,
+			},
+			578: {
+				slidesPerView: 3.4,
+			},
+			768: {
+				slidesPerView: 3.2,
+			},
+			993: {
+				slidesPerView: 6,
+			}
+		}
+	});
+
+	const modalBtns = document.querySelectorAll('.modal-btn')
+	const modalCloseBtns = document.querySelectorAll('.modal-close')
+	const body = document.querySelector('body')
+	
+	for (let modalBtn of modalBtns) {
+		modalBtn.addEventListener('click', () => {
+			body.classList.add('bodi-modal-active')
+		})
+	}
+
+	for (let modalCloseBtn of modalCloseBtns) {
+		modalCloseBtn.addEventListener('click', () => {
+			body.classList.remove('bodi-modal-active')
+		})
+	}
 
 })

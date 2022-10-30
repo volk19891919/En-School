@@ -1,6 +1,42 @@
 	<footer class="footer">
-		footer
+		<div class="container flex flex_aic">
+			<div class="footer__logo"><img src="images/dist/logo-f.svg" alt=""></div>
+			<div class="cop">© 2022. Все парва защищен</div>
+			<a href="#" class="pol" target="_blank">Политика конфиденциальности</a>
+		</div>
 	</footer>
+
+	<div id="modal" class="modal">
+		<div class="modal__ovr modal-close"></div>
+		<section class="modal__wrapper form form-wrapper">
+			<button class="modal__close modal-close"></button>
+			<h3 class="form-wrapper__title">Пробный урок</h3>
+			<p class="form-wrapper__sub-text">Мы свяжемся с Вами и договоримся <br>о времени и дне</p>
+			<form>
+				<label class="label">
+					<span>Как вас зовут?</span>
+					<input type="text">
+				</label>
+				<label class="label">
+					<span>Введите ваш телефон:</span>
+					<input type="tel">
+				</label>
+				<label class="label">
+					<span>Введите ваш e-mail:</span>
+					<input type="email">
+				</label>
+				<button type="submit" class="btn btn-primary btn-icon btn-icon_26">Записаться на пробный урок</button>
+				<div class="wpcf7-acceptance">
+					<span>
+						<label>
+							<input type="checkbox">
+							<span>Вы соглашаетесь на условия обработки персональных данных</span>
+						</label>
+					</span>
+				</div>
+			</form>
+		</section>
+	</div>
 	
 	<script src="vendor/swiper-bundle.min.js"></script>
 	<script src="js/app.min.js"></script>
